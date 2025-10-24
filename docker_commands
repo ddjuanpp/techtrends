@@ -1,0 +1,8 @@
+# Build Docker image
+docker build -t techtrends .
+
+# Run Docker container in detached mode, map host port 7111 -> container port 3111
+docker run -d -p 7111:3111 techtrends
+
+# Get logs from container (after running)
+docker logs <container_id>
